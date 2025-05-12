@@ -1,0 +1,21 @@
+1. If songs.db contains the top 100 songs of one listener from 2018, how would you characterize their audio aura?
+The audio aura of the top 100 songs in the songs.db database, if they belong to a single listener from 2018, would likely reflect their musical preferences in terms of tempo, energy, danceability, and other key features of the songs. Based on these features, I would expect the listener's audio aura to have certain characteristics:
+
+Tempo: If most of the songs have high tempos, it might suggest that the listener enjoys fast-paced, upbeat music, possibly favoring genres like pop, electronic, or dance.
+Energy: A high average energy level in the songs would suggest the listener prefers songs that are lively, intense, and engaging. These could be songs from genres like EDM, rock, or hip-hop.
+Danceability: If the danceability metric is generally high, it would suggest that the listener enjoys songs with rhythms that are easy to groove to, which is common in pop, electronic, and hip-hop music.
+Valence: A higher average valence indicates that the listener gravitates toward songs with a positive, happy mood. Conversely, if the valence is lower, they might prefer more melancholic or introspective music.
+In summary, the listener’s audio aura could be characterized by high energy, danceability, and tempo, with a generally positive mood (depending on valence). This would likely indicate a preference for upbeat and lively music from genres such as pop, dance, or hip-hop.
+
+2. Hypothesize about why the way you’ve calculated this aura might not be very representative of the listener. What better ways of calculating this aura would you propose?
+The way I’ve calculated the audio aura — by averaging attributes like tempo, energy, danceability, and valence — provides a general overview of the songs in the listener’s top 100. However, it might not be fully representative for several reasons:
+
+Averaging Can Oversimplify: Simply averaging the features of the songs can obscure the nuances of the listener’s preferences. For example, a listener may enjoy both very high-energy songs and more mellow songs, but the averaging process might smooth out these extremes, making it look like their preferences are more consistent than they actually are.
+Song Variety: The top 100 songs may span various genres, which have different characteristics in terms of tempo, energy, and valence. A listener who enjoys a wide range of genres might appear to have a more "neutral" aura, even though their preferences are quite varied.
+Personal Context: The audio aura doesn’t take into account personal context, such as the listener’s mood during a given period, or the fact that they may have different preferences for different situations (e.g., workout playlists vs. relaxation playlists).
+Better ways of calculating the aura:
+
+Genre-Specific Analysis: Instead of averaging the song features across all genres, we could analyze the features within each genre to understand what the listener enjoys about specific genres.
+Mood-Based Clustering: We could cluster songs based on their mood (using valence and energy) and see how the listener’s preferences vary between different moods (e.g., energetic vs. relaxed).
+Temporal Factors: If we had access to listening habits over time (e.g., which songs the listener preferred in different months or seasons), we could factor in temporal preferences to calculate a more dynamic aura.
+Context-Aware Recommendations: Incorporating factors like time of day, activity (e.g., workout vs. relaxation), or even social context (listening to music with friends) might allow us to better capture the context in which the listener enjoys different types of music.S

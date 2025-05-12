@@ -1,0 +1,12 @@
+HTML Tags Used:
+
+<h1>, <h2>, <ul>, <li>, <form>, <input>, <button>, <nav>, <a>, <footer>.
+CSS Properties Used:
+
+background-color, color, font-family, margin, position.
+JavaScript:
+
+Implemented an alert on the "Contact Us" form submission for interactivity.
+Bootstrap:
+
+Used Navbar, buttons, forms, and responsive design features.

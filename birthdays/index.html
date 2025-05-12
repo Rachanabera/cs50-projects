@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Birthday Tracker</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+            crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        <div class="container mt-5">
+            <h1 class="text-center">Birthday Tracker</h1>
+
+            <!-- Form for adding a birthday -->
+            <form action="/" method="post" class="mt-4">
+                <div class="mb-3">
+                    <input name="name" placeholder="Name" type="text" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                    <input name="month" placeholder="Month" type="number" class="form-control" min="1" max="12" required>
+                </div>
+                <div class="mb-3">
+                    <input name="day" placeholder="Day" type="number" class="form-control" min="1" max="31" required>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Add Birthday</button>
+            </form>
+
+            <!-- Table for displaying birthdays -->
+            <table class="table table-striped table-bordered mt-4">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Birthday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for birthday in birthdays %}
+                    <tr>
+                        <td>{{ birthday.name }}</td>
+                        <td>{{ birthday.month }}/{{ birthday.day }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
